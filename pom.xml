@@ -16,6 +16,21 @@
     <description>WebJar for es5-shim</description>
     <url>http://webjars.org</url>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <upstream.version>2.3.0</upstream.version>
+        <upstream.url>https://github.com/kriskowal/es5-shim/archive</upstream.url>
+        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                "paths": {
+                    "es5-shim": "es5-shim",
+                    "es5-sham": "es5-sham"
+                }
+            }
+        </requirejs>
+    </properties>
+
     <developers>
         <developer>
             <id>jamesward</id>
@@ -39,13 +54,6 @@
         <tag>HEAD</tag>
     </scm>
     
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>2.3.0</upstream.version>
-        <upstream.url>https://github.com/kriskowal/es5-shim/archive</upstream.url>
-        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
-    </properties>
-
     <build>
         <plugins>
             <plugin>
