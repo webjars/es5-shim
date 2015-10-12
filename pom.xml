@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>es5-shim</artifactId>
-    <version>4.1.14</version>
+    <version>4.1.15-SNAPSHOT</version>
     <name>es5-shim</name>
     <description>WebJar for es5-shim</description>
     <url>http://webjars.org</url>
@@ -51,7 +51,7 @@
         <url>http://github.com/webjars/es5-shim</url>
         <connection>scm:git:https://github.com/webjars/es5-shim.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/es5-shim.git</developerConnection>
-        <tag>es5-shim-4.1.14</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <build>
