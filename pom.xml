@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>es5-shim</artifactId>
-    <version>4.1.14-SNAPSHOT</version>
+    <version>4.1.14</version>
     <name>es5-shim</name>
     <description>WebJar for es5-shim</description>
     <url>http://webjars.org</url>
@@ -51,7 +51,7 @@
         <url>http://github.com/webjars/es5-shim</url>
         <connection>scm:git:https://github.com/webjars/es5-shim.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/es5-shim.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>es5-shim-4.1.14</tag>
     </scm>
     
     <build>
@@ -84,11 +84,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/es5-shim-${upstream.version}" includes="*.js,*.map"/>
+                                    <fileset dir="${project.build.directory}/es5-shim-${upstream.version}" includes="*.js,*.map" />
                                 </move>
                             </target>
                         </configuration>
